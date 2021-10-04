@@ -1,7 +1,8 @@
-package org.thespheres.payara.clientcert.test;
+package payara.certrealm;
 
 import fish.payara.security.annotations.CertificateAuthenticationMechanismDefinition;
 import fish.payara.security.annotations.CertificateIdentityStoreDefinition;
+
 import javax.annotation.security.DeclareRoles;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -11,10 +12,10 @@ import javax.ws.rs.core.Application;
  *
  * @author Juneau
  */
-@DeclareRoles("admin")
 @ApplicationPath("resources")
+@DeclareRoles("admin")
 @CertificateAuthenticationMechanismDefinition
-@CertificateIdentityStoreDefinition(value = "certificate", assignGroups = "admin")
+@CertificateIdentityStoreDefinition
 public class JAXRSConfiguration extends Application {
 
 }

@@ -1,4 +1,7 @@
-package org.thespheres.payara.clientcert.test.resources;
+package payara.certrealm.resources;
+
+import fish.payara.security.annotations.CertificateAuthenticationMechanismDefinition;
+import fish.payara.security.annotations.CertificateIdentityStoreDefinition;
 
 import java.security.Principal;
 import javax.annotation.security.RolesAllowed;
@@ -13,8 +16,8 @@ import javax.ws.rs.core.SecurityContext;
  * @author
  */
 @RolesAllowed("admin")
-@Path("javaee8")
-public class JavaEE8Resource {
+@Path("home")
+public class JavaEEResource {
 
     @Context
     SecurityContext securityContext;
