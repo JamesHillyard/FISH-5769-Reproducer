@@ -27,12 +27,6 @@
             <artifactId>javaee-api</artifactId>
             <version>${jakartaee}</version>
             <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.glassfish.soteria</groupId>
-                    <artifactId>jakarta.security.enterprise</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
     </dependencies>
     
